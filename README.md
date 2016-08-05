@@ -68,8 +68,9 @@ Check driver
     drm                   249998  3 nvidia
     i2c_core               46012  3 drm,i2c_i801,nvidia
 
-You can also install cuDNN (for optimized deep learning functions), see nvidia's website
+You can also install cuDNN (for optimized deep learning functions), see nvidia's website (https://developer.nvidia.com/rdp/cudnn-download). Download `cudnn-7.0-linux-x64-v4.0-prod.tgz`, since Tensorflow does not support cudnn 5.0 at the time of writing (Tensorfloow 0.9, august 2016)
 
+    # tar xvzf cudnn-7.0-linux-x64-v4.0-prod.tgz
     # cp cuda/include/cudnn.h /usr/local/include/
     # cp cuda/lib64/libcudnn* /usr/local/cuda/lib64/
 
